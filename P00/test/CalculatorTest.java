@@ -46,13 +46,21 @@ public class CalculatorTest {
 	@Test
 	public void testDivide() {
 		//fail("Not yet implemented");
-		int a = 10;
-		int b = 2;
+		int a = 75;
+		int b = 5;
 		Calculator cal = new Calculator();
 		int actual = cal.divide(a, b);
-		int expected = 5;
+		int expected = 15;
 		assertEquals(expected, actual);
 }
+	public int testDivide1() {
+		int a = 50;
+		int b = 0;
+		if(b == 0) {
+			throw new IllegalArgumentException();
+		}
+		return a / b;
+	}
 	@Test
 	public void testPower() {
 		int a = 3;
