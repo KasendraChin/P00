@@ -12,4 +12,7 @@ public class Calculator {
 	public int divide(int a, int b) {
 		return a / b;
 	}
+	public double power(int a, int b) {
+		return Math.pow(a, b);
+	}
 }

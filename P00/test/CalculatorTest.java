@@ -46,12 +46,20 @@ public class CalculatorTest {
 	@Test
 	public void testDivide() {
 		//fail("Not yet implemented");
-		int a = 200;
+		int a = 10;
 		int b = 2;
 		Calculator cal = new Calculator();
 		int actual = cal.divide(a, b);
-		int expected = 100;
+		int expected = 5;
+		assertEquals(expected, actual);
+}
+	@Test
+	public void testPower() {
+		int a = 3;
+		int b = 2;
+		Calculator cal = new Calculator();
+		int actual = (int) cal.power(a, b);
+		int expected = 9;
 		assertEquals(expected, actual);
 	}
-
 }
